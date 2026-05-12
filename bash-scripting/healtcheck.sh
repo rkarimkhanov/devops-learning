@@ -24,4 +24,20 @@ get_cpu() {
     log "CPU Idle: ${cpu_idle}%"
 }
 
+get_memory() {
+    log "=== Memory Usage ==="
+
+    mem_total=$(free | awk 'NR==2 {print $2}')
+    mem_used=$(free  | awk 'NR==2 {print $3}')
+    mem_free=$(free  | awk 'NR==2 {print $4}')
+    mem_percent=$(( mem_used * 100 / mem_total ))
+
+    log "Used: ${mem_percent}%"
+    free -h | awk 'NR==2 {printf "Total: %s  |  Used: %s  |  Free: %s\n", $2, $3, $4}' | tee -a "$LOG_FILE"
+}
+
+
+
 get_cpu
+
+get_memory
