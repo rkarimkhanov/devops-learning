@@ -45,10 +45,19 @@ get_disk() {
     df -h / | awk 'NR==2 {printf "Total: %s  |  Used: %s  |  Free: %s\n", $2, $3, $4}' | tee -a "$LOG_FILE"
 }
 
+get_top_processes() {
+    log "=== Top 5 Processes by Memory ==="
+
+    ps aux --sort=-%mem | awk 'NR<=6 {printf "%-10s %-6s %-6s %s\n", $1, $3, $4, $11}' | tee -a "$LOG_FILE"
+}
+
 
 
 get_cpu
 
 get_memory
 
+get_top_processes
+
 get_disk
+
