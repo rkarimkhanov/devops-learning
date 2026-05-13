@@ -36,8 +36,19 @@ get_memory() {
     free -h | awk 'NR==2 {printf "Total: %s  |  Used: %s  |  Free: %s\n", $2, $3, $4}' | tee -a "$LOG_FILE"
 }
 
+get_disk() {
+    log "=== Disk Usage ==="
+
+    disk_percent=$(df / | awk 'NR==2 {print $5}')
+
+    log "Disk Used: ${disk_percent}"
+    df -h / | awk 'NR==2 {printf "Total: %s  |  Used: %s  |  Free: %s\n", $2, $3, $4}' | tee -a "$LOG_FILE"
+}
+
 
 
 get_cpu
 
 get_memory
+
+get_disk
