@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -euo pipefail
+
+
 # ================================================
 # Script:  health_check.sh
 # Purpose: System health monitor
@@ -8,10 +11,17 @@
 LOG_DIR="$HOME/logs"
 LOG_FILE="$LOG_DIR/system_$(date +%Y%m%d_%H%M%S).log"
 
-mkdir -p "$LOG_DIR"
+mkdir -p "$LOG_DIR" ||  {
+    echo "ERROR: Cannot create log directory"
+    exit 1
+}
 
 log() {
-    echo "$1" | tee -a "$LOG_FILE"
+    # critical — if logging fails, report it
+    echo "$1" | tee -a "$LOG_FILE" || {
+        echo "ERROR: Cannot write to log file $LOG_FILE"
+        exit 1
+    }
 }
 
 get_cpu() {
