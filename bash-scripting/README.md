@@ -41,7 +41,7 @@ Log files are saved to `~/logs/` with a timestamp in the filename so nothing get
 
 ## Output
 
-**When thresholds are exceeded:**
+**When thresholds are exceeded:(As if threshold is 20%)**
 
 ![warning] <img width="667" height="326" alt="image" src="https://github.com/user-attachments/assets/f5c7d254-3a9a-4ac0-a621-5f4235d4bca8" />
 
