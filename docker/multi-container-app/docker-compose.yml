@@ -1,0 +1,13 @@
+services:
+  redis:
+    image: redis:latest
+    #ports:
+    #  - '6379:6379'
+
+  web:
+    build: .
+    image: flask-redis-app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - redis
