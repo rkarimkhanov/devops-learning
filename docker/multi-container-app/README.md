@@ -75,7 +75,6 @@ curl http://localhost:5000/count
 
 | Concept | How |
 |---------|-----|
-| Multi-stage build | stage 1 installs dependencies, stage 2 runs app |
 | Container networking | Flask talks to Redis by service name |
 | Persistent volume | Redis data survives container restarts |
 | Environment variables | Redis connection details read from `.env` |
@@ -96,4 +95,4 @@ Copy `.env.example` to `.env` and fill in your values.
 
 ## Background
 
-Part of my DevOps learning journey — transitioning from Linux system administration and network engineering into DevOps. This project covers Docker fundamentals I'd previously only used at a surface level: multi-stage builds, compose networking, volumes, and proper secret management with environment variables.
+Part of my DevOps learning journey — transitioning from Linux system administration into DevOps. This project covers Docker fundamentals I'd previously only used at a surface level: compose networking, volumes, and proper secret management with environment variables.
