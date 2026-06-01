@@ -7,7 +7,7 @@ Built a custom AWS VPC from scratch with public and private subnets, demonstrati
 
 ## Architecture Diagram
 
-![AWS VPC Architecture](architecture/diagram.drawio)
+![AWS VPC Architecture](architecture/diagram.png)
 
 ---
 
