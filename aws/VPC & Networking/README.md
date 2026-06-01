@@ -90,34 +90,40 @@ Both EC2s communicate internally via the **local route** — traffic never leave
 ## Screenshots
 
 ### VPC
-![VPC](screenshots/vpc.png)
+![VPC](screenshots/VPC.png)
 
 ### Subnets
-![Subnets](screenshots/subnets.png)
+![Subnets](screenshots/Subnets.png)
 
 ### Internet Gateway
-![IGW](screenshots/igw.png)
+![IGW](screenshots/Inernet Gateway.png)
 
 ### NAT Gateway
-![NAT](screenshots/nat-gateway.png)
+![NAT](screenshots/NAT_Gateway.png)
 
-### Route Tables
-![Route Tables](screenshots/route-tables.png)
+### Public Route Table
+![Public Route Table](screenshots/public_route_table.png)
 
-### Security Groups
-![Security Groups](screenshots/security-groups.png)
+### Private Route Table
+![Private Route Table](screenshots/private_route_table.png)
 
-### EC2 Instances
-![EC2](screenshots/ec2-instances.png)
+### Public Security Group
+![Public SG](screenshots/public_sg.png)
+
+### Private Security Group
+![Private SG](screenshots/private_sg.png)
+
+### Public EC2
+![Public EC2](screenshots/public_EC2.png)
+
+### Private EC2
+![Private EC2](screenshots/private-EC2.png)
 
 ### SSH into Public EC2
-![SSH Public](screenshots/ssh-public-ec2.png)
+![SSH Public](screenshots/SSH-from_myIp_toPublicEC2.png)
 
 ### SSH into Private EC2 via Bastion
-![SSH Private](screenshots/ssh-private-ec2.png)
-
-### CloudWatch Monitoring
-![CloudWatch](screenshots/cloudwatch.png)
+![SSH Private](screenshots/SSH_from_publicToPrivateEc2.png)
 
 ---
 
