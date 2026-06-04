@@ -29,10 +29,6 @@ Deployed two EC2 instances behind an Application Load Balancer (ALB) across mult
 
 ---
 
-## Live URL
-
-🔒 [https://alb.rkarim.net](https://alb.rkarim.net)
-
 ---
 
 ## Traffic Flow
