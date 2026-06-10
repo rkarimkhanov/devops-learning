@@ -1,5 +1,10 @@
 # 01 - WordPress on EC2 with Terraform
 
+
+
+<img width="1359" height="731" alt="wordpress-terraform" src="https://github.com/user-attachments/assets/7b73a3a8-0b32-4b42-a865-7fdbc1ca68af" />
+<img width="1353" height="720" alt="wordpress-80" src="https://github.com/user-attachments/assets/05102b9c-df15-4c01-801e-e9205fc460b4" />
+
 ## What I Built
 
 A full WordPress stack on AWS provisioned entirely with Terraform.
